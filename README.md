@@ -1,4 +1,5 @@
 EASY WASH
-APLIKASI BOOKING LAUNDRY CEPAT
+Aplikasi booking laundry cepat
+
 ![Alt text](image.png)
 ![Alt text](image-1.png)
