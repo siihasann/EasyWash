@@ -72,7 +72,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../size_config.dart';
-import '/path/FormPage.dart';
+import '/path/bookingself.dart';
+import '/path/bookingjas.dart';
+import '/path/bookingboneka.dart';
+import '/path/bookingkiloan.dart';
 import '/path/SelfLaundryPage.dart';
 import '/path/KiloanKilatPage.dart';
 import '/path/LaundryJasPage.dart';
@@ -82,10 +85,10 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> categories = [
-      {"icon": "assets/icons/self_laundry.svg", "text": "Self Laundry"},
-      {"icon": "assets/icons/kiloan_kilat.svg", "text": "Kiloan Kilat"},
-      {"icon": "assets/icons/kiloan_kilat.svg", "text": "Laundry Jas"},
-      {"icon": "assets/icons/kiloan_kilat.svg", "text": "Laundry Boneka"},
+      {"icon": "assets/icons/categori1.svg", "text": "Self Laundry"},
+      {"icon": "assets/icons/categori2.svg", "text": "Kiloan Kilat"},
+      {"icon": "assets/icons/categori3.svg", "text": "Laundry Jas"},
+      {"icon": "assets/icons/categori4.svg", "text": "Laundry Boneka"},
       {"icon": "assets/icons/Discover.svg", "text": "More"},
     ];
     return Padding(

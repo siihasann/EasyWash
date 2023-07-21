@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'FormPage.dart';
+import 'bookingjas.dart';
 
 class LaundryJasPage extends StatelessWidget {
   @override
@@ -15,7 +15,7 @@ class LaundryJasPage extends StatelessWidget {
             height: 200,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/banner_laundry_jas.jpg'),
+                image: AssetImage('assets/images2/iklan.png'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -42,11 +42,11 @@ class LaundryJasPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               IconCard(
-                icon: 'assets/icons/iron.svg',
+                icon: 'assets/icons/mesinmudah.svg',
                 text: 'Pengerjaan\nProfesional',
               ),
               IconCard(
-                icon: 'assets/icons/hanger.svg',
+                icon: 'assets/icons/categori3.svg',
                 text: 'Penyimpanan\nAman',
               ),
               IconCard(
@@ -60,7 +60,8 @@ class LaundryJasPage extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => FormPage()),
+                MaterialPageRoute(
+                    builder: (context) => BookingLaundryJasPage()),
               );
             },
             child: Text('Booking'),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'FormPage.dart';
+import 'bookingboneka.dart';
 
 class LaundryBonekaPage extends StatelessWidget {
   @override
@@ -15,7 +15,7 @@ class LaundryBonekaPage extends StatelessWidget {
             height: 200,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/banner_laundry_boneka.jpg'),
+                image: AssetImage('assets/images2/jaspromo.png'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -42,15 +42,15 @@ class LaundryBonekaPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               IconCard(
-                icon: 'assets/icons/kiloan_kilat.svg',
+                icon: 'assets/icons/categori2.svg',
                 text: 'Cuci Bersih',
               ),
               IconCard(
-                icon: 'assets/icons/drying.svg',
+                icon: 'assets/icons/dryer.svg',
                 text: 'Pengeringan\nAman',
               ),
               IconCard(
-                icon: 'assets/icons/odor.svg',
+                icon: 'assets/icons/softener.svg',
                 text: 'Wangi Tahan\nLama',
               ),
             ],
@@ -60,7 +60,8 @@ class LaundryBonekaPage extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => FormPage()),
+                MaterialPageRoute(
+                    builder: (context) => BookingLaundryBonekaPage()),
               );
             },
             child: Text('Booking'),

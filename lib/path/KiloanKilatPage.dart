@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'FormPage.dart';
+import 'bookingkiloan.dart';
 
 class KiloanKilatPage extends StatelessWidget {
   @override
@@ -15,7 +15,7 @@ class KiloanKilatPage extends StatelessWidget {
             height: 200,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/banner_kiloan_kilat.jpg'),
+                image: AssetImage('assets/images2/iklan.png'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -42,11 +42,11 @@ class KiloanKilatPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               IconCard(
-                icon: 'assets/icons/washing_machine.svg',
+                icon: 'assets/icons/categori1.svg',
                 text: 'Mesin Cuci\nModern',
               ),
               IconCard(
-                icon: 'assets/icons/delivery_truck.svg',
+                icon: 'assets/icons/delivery.svg',
                 text: 'Pengantaran\nKilat',
               ),
               IconCard(
@@ -60,7 +60,8 @@ class KiloanKilatPage extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => FormPage()),
+                MaterialPageRoute(
+                    builder: (context) => BookingLaundryKiloanPage()),
               );
             },
             child: Text('Booking'),

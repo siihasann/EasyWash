@@ -39,7 +39,7 @@
 // }
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'FormPage.dart';
+import 'bookingself.dart';
 
 class SelfLaundryPage extends StatelessWidget {
   @override
@@ -86,7 +86,7 @@ class SelfLaundryPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 FeatureCard(
-                  icon: 'assets/icons/washing_machine.svg',
+                  icon: 'assets/icons/categori1.svg',
                   title: 'Mesin Cuci\nModern',
                   description:
                       'Nikmati fasilitas mesin cuci terbaru yang mampu mencuci pakaian dengan bersih dan efisien.',
@@ -104,13 +104,13 @@ class SelfLaundryPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 FeatureCard(
-                  icon: 'assets/icons/convenient.svg',
+                  icon: 'assets/icons/mesinmudah.svg',
                   title: 'Mudah\nDigunakan',
                   description:
                       'Kami menyediakan panduan penggunaan yang jelas sehingga Anda dapat dengan mudah menggunakan fasilitas self laundry kami.',
                 ),
                 FeatureCard(
-                  icon: 'assets/icons/folding_clothes.svg',
+                  icon: 'assets/icons/ruanglipat.svg',
                   title: 'Ruang Lipat\nNyaman',
                   description:
                       'Setelah mencuci dan mengeringkan pakaian, Anda dapat menggunakan ruang lipat yang nyaman untuk melipat pakaian dengan rapi.',
@@ -180,20 +180,6 @@ class FeatureCard extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
         ],
-      ),
-    );
-  }
-}
-
-class BookingFormPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Booking Form'),
-      ),
-      body: Center(
-        child: Text('Booking Form'),
       ),
     );
   }
